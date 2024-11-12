@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+}
+
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.kanban-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.kanban-column {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.ticket-card {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.ticket-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.ticket-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.ticket-card p:last-child {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .kanban-columns {
+    flex-direction: column;
+  }
+}
